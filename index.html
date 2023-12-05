@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nature web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- icon cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+  </head>
+
+  <style>
+    .nav-link, .navbar-brand{
+      font-size: 18px;
+      color: white;
+    }
+
+    header{
+      padding: 11rem 0;
+      background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url(https://img.freepik.com/free-photo/landscape-morning-fog-mountains-sunrise_335224-793.jpg?w=740&t=st=1701579578~exp=1701580178~hmac=b4fe0aad3c360e6c78af9b370adc2ff975d2cb591d6db34fb89aa8fa6896d49f);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: whitesmoke;
+    }
+
+
+        .s-line{
+          width: 100px;
+          height: 2px;
+          background-color: yellow;
+          margin: 1rem auto;
+        }
+
+      
+
+        section{
+          padding: 5rem 0;
+          background-color: #c7f6c793;
+        }
+
+        .card img{
+        max-width: 425px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 0;
+    }
+
+    .card{
+      max-width: 425px;
+      border: none;
+      margin: auto;
+      background: transparent;
+      padding: 2rem 0 4rem 0;
+      transition: .5s;
+      padding: 0;
+    }
+
+    .card:hover{
+
+    box-shadow: 0px 2px 12px 5px rgba(0, 128, 0, 0.5);
+
+  }
+    
+
+  @media (max-width:678px){
+        .card img{
+            height: 384px;
+        }
+
+    }
+
+
+    #quot img{
+     width: 90px;
+     height: 90px;
+     border-radius: 50%;
+     object-fit: cover;
+    }
+
+
+    #about-us img{
+      height: 500px;
+      width: 500px;
+      object-fit: cover;
+    }
+
+    @media (max-width:400px){
+      #abt-us img{
+      height: 300px;
+      width: 300px;
+    
+    }
+    }
+
+   #last{
+    color: yellow;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://t4.ftcdn.net/jpg/04/82/20/61/360_F_482206198_jVHPnUmO9sR86vs5rukAlGVNMHn50w85.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+
+.logo{
+  width: 30px;
+  height:30px;
+
+}
+
+.logo2{
+  width: 50px;
+  height:50px;
+
+}
+
+nav{
+  background-color: #c7f6c741;
+  border-bottom-right-radius:100% ;
+  border-bottom-left-radius:100% ;
+  
+
+}
+
+.nav-link{
+  font-size: 20px;
+  font-weight: bold;
+  color: #b2de27  !important;
+  transition: .5s;
+
+ 
+}
+
+.nav-link:hover{
+  color: rgb(0, 255, 0) !important;
+  transform: scale(1.2);
+
+}
+
+@media (max-width:992px){
+  nav{
+    background-color:#c7f6c7;
+  }
+
+  .nav-link{
+  color:green  !important;
+ 
+}
+
+
+}
+
+
+.navbar-toggler{
+    border: none;
+    color: green;
+    font-size: 40px;
+    border-radius: 50%;
+  }
+
+
+/* FADE IN REVEAL  */
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 0.9s ease-in;
+}
+.active.fade-left {
+  animation: fade-left  0.9s ease-in;
+}
+.active.fade-right {
+  animation: fade-right  0.9s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* copy and past where you want animation */
+/* reveal fade-left */
+
+
+
+  </style>
+
+  <body>
+
+    <header id="home">
+      <nav class="navbar navbar-expand-lg fixed-top p-0">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" class="logo2" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#services">Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about-us">About</a>
+              </li>
+
+            
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#last">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://ajit8240.github.io/portfolio.github.io/" target="_">Ajit</a>
+              </li>
+             
+                 
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-header">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-4 ">
+              <h3 style="color: #c7f6c7;"><span style="color:yellow;">we</span> are love</h3>
+              <h1 class="display-1 " style="color: #c7f6c7;">Natu<span style="color:yellow;">re</span></h1>
+              <p class="fs-5" style="color:#c7f6c7; ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat commodi voluptatem temporibus.
+                
+              </p>
+
+              <button class="btn btn-warning rounded-0">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- services  -->
+<section id="services" class="py-5">
+  <div class="container py-3">
+    <div class="row justify-content-center row-gap-3 text-center">
+      <div class="col-12">
+        <h3 class="text-success reveal fade-bottom">Our Services</h3>
+        <div class="s-line"></div>
+      </div>
+      <div class="col-lg-4 col-md-6 reveal fade-bottom">
+        <div class="card reveal fade-bottom">
+          <img src="https://images.pexels.com/photos/12312748/pexels-photo-12312748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-success text-capitalize fw-bold fs-4">Card title</h5>
+            <p class="card-text text-warning-emphasis fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 reveal fade-bottom">
+        <div class="card  reveal fade-bottom">
+          <img src="https://burst.shopifycdn.com/photos/hiker-looks-up-at-vertical-mountain-peaks.jpg?width=1000&format=pjpg&exif=0&iptc=0" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-success text-capitalize fw-bold fs-4">Card title</h5>
+            <p class="card-text text-warning-emphasis fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 ">
+        <div class="card reveal fade-bottom">
+          <img src="https://images.unsplash.com/photo-1621752078521-251fab6c346f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTJ8fHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-success text-capitalize fw-bold fs-4">Card title</h5>
+            <p class="card-text text-warning-emphasis fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- quotation  -->
+<section id="quot" class="bg-light py-5 ">
+  <div class="container">
+    <div class="row justify-content-center text-success">
+      <div class="col-lg-4  text-center">
+        <i class="bi bi-quote fs-2 text-success reveal fade-bottom"></i>
+        <p class="fs-5 reveal fade-bottom">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla, fugit non quisquam alias est maxime accusamus impedit!</p>
+
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMHNtaWxpbmd8ZW58MHx8MHx8fDA%3D" alt="" class="reveal fade-bottom">
+        <p class="my-2 reveal fade-bottom">Jeni Miller</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- about us  -->
+    <section id="about-us">
+      <div class="container">
+        <div class="row justify-content-between row-gap-5 ">
+          <div class="col-lg-5 col-md-10">
+
+            <div class="text">
+              <p class="reveal fade-bottom">ABOUT US</p>
+              <p class="fs-3 fw-bold text-warning-emphasis reveal fade-bottom">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci atque incidunt error placeat quibusdam assumenda.</p>
+              <p class="text-success fs-5 reveal fade-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi recusandae provident facilis soluta maxime dicta ex voluptatibus ducimus obcaecati excepturi enim ea fugit aut, sapiente odio, quidem dolor eos?</p>
+              <a href="" class="btn btn-warning rounded-0 reveal fade-bottom">Find Out More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 reveal fade-bottom">
+            <img src="https://www.wallpapertip.com/wmimgs/2-21766_nature-wallpapers-hd-for-android.jpg" alt="" class="img-fluid ">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="last" class="py-5">
+
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <div class="col-lg-5 reveal fade-bottom">
+<h1 class="display-5 reveal fade-bottom">QUESTIONS ?</h1> 
+<p class="my-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, sunt sapiente id vel assumenda delectus maiores.</p> 
+<a href="" class="btn btn-warning rounded-0 ">Lets Talk Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-1">
+      <img src="logo.png" alt="logo" class="logo">
+   copyright &copy; by Ajit Das 
+
+     
+    </footer>
+
+    <script>
+      // fade reveal Animation
+        function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>
